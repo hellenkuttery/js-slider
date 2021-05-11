@@ -15,9 +15,22 @@ const meal=[
         link:"https://yemek.com/cikolatali-pratik-tatli-tarifleri/"
     }
 ];
+var counter=0;
 
-document.querySelector(".card-img-top").setAttribute("src",meal[2].image)
+function slider(e){
+    document.querySelector(".card-img-top").setAttribute("src",meal[e].image)
+    document.querySelector(".card-title").textContent=meal[e].name
+    document.querySelector(".card-link").setAttribute("href",meal[e].link)
+    }
 
-document.querySelector(".card-title").textContent=meal[2].name
+document.querySelector(".back").addEventListener("click",function(){
+    counter--;
+    slider(counter)
+})
 
-document.querySelector(".card-link").setAttribute("href",meal[2].link)
+document.querySelector(".next").addEventListener("click",function(){
+    counter++;
+    console.log(counter);
+    slider(counter)
+})
+
