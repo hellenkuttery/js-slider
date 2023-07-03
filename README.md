@@ -19,4 +19,4 @@ Javascript Slider
 ![js Slider](img/slider.gif)
 
 ## Project Link
-[Parallax Scrolling Effect-Website](https://hellenkuttery.github.io/js-slider/)
+[Simple JS Slider](https://hellenkuttery.github.io/js-slider/)
